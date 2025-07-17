@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Rencontres</title>
+  <meta charset="UTF-8">
+  <title>On se rencontre enfin</title>
+
+  <!-- Police Inter via Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+
+  <!-- Style interne -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2em;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 0.3em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 2em;
+    }
+
+    canvas {
+      display: block;
+      margin: 2em auto 1em auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .instructions {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1em;
+      line-height: 1.6;
+      color: #444;
+      text-align: left;
+      padding: 1em;
+    }
+  </style>
+
+  <!-- Librairies P5.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-  <style>body { margin: 0; overflow: hidden; }</style>
 </head>
+
 <body>
-  <!-- Classes de base -->
+  <h1>KARAMEL_IS_CODING</h1>
+  <h2>On se rencontre enfin</h2>
+
+  <!-- Chargement des classes -->
   <script src="nez.js"></script>
   <script src="yeux.js"></script>
   <script src="visage.js"></script>
   <script src="cheveux.js"></script>
   <script src="mili.js"></script>
-  
-  <!-- Perso dépend de tout ce qui précède -->
   <script src="perso.js"></script>
-  
-  <!-- Bang peut être autonome -->
   <script src="bang.js"></script>
-  
-  <!-- Sketch principal -->
   <script src="sketch.js"></script>
+
+  <!-- Texte d'introduction et d'interaction -->
+  <div class="instructions">
+    <p>Ce sketch illustre une rencontre attendue. Il propose un jeu de regards, de couleurs et de mouvements.</p>
+    <p><strong>Interactivité :</strong><br>
+    Appuyez sur la <strong>barre d’espace</strong> pour changer de personnage.<br>
+    Appuyez sur la touche <strong>S</strong> pour séparer les personnages.</p>
+  </div>
 </body>
 </html>

@@ -21,6 +21,13 @@ function preload() {
 
 function setup() {
   createCanvas(640, 320);
+
+  // function setup() {
+  // let canvas = createCanvas(800, 600); // ou toute autre taille selon ton projet
+  // canvas.parent("sketch-container");
+//}
+
+
   colorMode(HSB, 360, 100, 100, 255);
   frameRate(60);
   noStroke();
