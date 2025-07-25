@@ -23,7 +23,10 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(640, 320);
+
+     userStartAudio(); // ← Nécessaire pour activer le contexte audio
+
+    let cnv = createCanvas(640, 320);
   cnv.parent('container');
 
   colorMode(HSB, 360, 100, 100, 255);
@@ -179,15 +182,15 @@ class FlashEllipse {
     fill(0, 0, 0, 200);
     noStroke();
     rectMode(CENTER);
-    rect(width / 2, 8.0 / 9.0 * height, 240, 24);
+    rect(width / 2, 8.0 / 9.0 * height, 200, 24);
 
     fill(120, 100, 100);
     textSize(12);
     let base = "LOVE FOR EVER...";
     let cursor = (frameCount % 30 < 15) ? "_" : " ";
-    text(base + cursor, width / 2 - 22, 8.0 / 9.0 * height);
+    text(base + cursor, width / 2 - 70, 8.0 / 9.0 * height + 5);
 
     let count = int((millis() / 1000.0 - this.tStart) * 100);
-    text(nf(count, 3), width - 210, 8.0 / 9.0 * height);
+    text(nf(count, 3), width - 250, 8.0 / 9.0 * height + 5);
   }
 }
