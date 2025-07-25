@@ -23,6 +23,7 @@ function preload() {
 }
 
 function setup() {
+  pixelDensity(1);
 
      userStartAudio(); // ← Nécessaire pour activer le contexte audio
 
