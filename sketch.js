@@ -36,7 +36,7 @@ function setup() {
   textFont(anton);
   textSize(32);
 
-  background(220, 100, 100, 255);
+  background(225, 40, 95, 255);
 
   perso1 = new Perso(true);
   perso2 = new Perso(false);
@@ -89,7 +89,7 @@ function keyPressed() {
 
 function draw() {
   if (!freeze) {
-    background(220, 80, 90, 255);
+    background(225, 30, 45, 255);
 
     if (separationActive) {
       separationOffset = width / 2;
