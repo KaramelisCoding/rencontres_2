@@ -89,7 +89,7 @@ function keyPressed() {
 
 function draw() {
   if (!freeze) {
-    background(225, 30, 45, 255);
+    background(190, 70, 50, 255);
 
     if (separationActive) {
       separationOffset = width / 2;
